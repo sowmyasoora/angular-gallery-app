@@ -1,0 +1,16 @@
+<div class="paginator">
+    <select class="form-select" aria-label="Select Page Size" id="dropdown" [(ngModel)]="pageSize" (ngModelChange)="pageSizeChanged($event)">
+        <option *ngFor="let option of pageSizeOptions" [value]="option">{{option}}</option>
+    </select>
+    <span>{{currentStartIndex + 1}} - {{currentEndIndex}} of {{length}}</span>
+
+    <div class="navigator-icons">
+        <span class="material-icons" id="prev" (click)="prevPage()" [class.disabled]="!hasPrev()">
+            arrow_back_ios
+        </span>
+    
+        <span class="material-icons" id="next" [class.disabled]="!hasNext()" (click)="nextPage()">
+            arrow_forward_ios
+        </span>    
+    </div>   
+</div>

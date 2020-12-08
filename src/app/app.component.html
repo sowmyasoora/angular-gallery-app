@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <app-filter></app-filter>
+        </div>
+        <div class="col-md-7 d-flex justify-content-end">
+            <app-paginator [length]="photos.length" (pageEvent)="onPageEvent($event)"></app-paginator>
+        </div>
+    </div>
+    <div class="row mt-20">
+        <app-photos-list [photos]="currentPagePhotos"></app-photos-list>
+    </div>
+</div>
+

@@ -1,0 +1,8 @@
+<div class="photos-list container">
+    <div class="row items">
+        <div *ngFor="let photo of photos" class="item">
+            <p class="title">{{photo.title}}</p>
+            <img [attr.src]="photo.url" />
+        </div>
+    </div>
+</div>

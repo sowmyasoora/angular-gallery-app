@@ -1,0 +1,23 @@
+.paginator {
+    padding-top:8px;
+}
+
+.material-icons {
+    font-size: 18px;
+}
+
+select {
+    width: 100px;
+    display: inline-block !important;
+    margin-right: 10px;
+}
+
+.navigator-icons {
+    display: inline;
+    margin-left: 10px;
+}
+
+.material-icons.disabled {
+    color: lightgray !important;
+    pointer-events: none;
+}

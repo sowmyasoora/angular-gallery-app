@@ -1,0 +1,40 @@
+.photos-list .items {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photos-list .items .item {
+    -ms-flex: 20%;
+    flex: 20%;
+    max-width: 20%;
+    padding: 2px;
+}
+
+.photos-list .items .item .title {
+  height: 66px;
+  overflow: hidden;
+}
+
+.photos-list .items .item img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .photos-list .items .item {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .photos-list .items .item {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
